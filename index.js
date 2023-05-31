@@ -12,7 +12,7 @@ const blogRoute = require("./routes/blog");
 const app=express();
 const PORT = process.env.PORT || 8001;
 
-mongoose.connect("mongodb://127.0.0.1:27017/blogify")
+mongoose.connect("mongodb://atlas-sql-6421d4e69e65cb338c6712bf-7k6nr.a.query.mongodb.net/test?ssl=true&authSource=admin")
 .then(e=>console.log("MongoDB connected"))
 .catch((err)=>console.log(err));
 
